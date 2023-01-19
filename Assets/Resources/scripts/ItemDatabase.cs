@@ -55,7 +55,7 @@ void BuildDatabase()
     new Item(0, "basic shield", "a basic shield made of wood with a iron trim",
     new Dictionary<string, int>
     {
-      {"defence", 5}
+      {"defence", 1}
     }),
     new Item(1, "glass bottle", "a empty bottle",
     new Dictionary<string, int>
@@ -125,11 +125,18 @@ void BuildDatabase()
         {
           {"damage", 3}
       }),
-      new Item(11, "fire sword", "a sword with a fire crystal aiding it ",
+      new Item(11, "fire sword", "a sword with a fire crystal aiding it",
       new Dictionary<string, int>
         {
           {"damage", 4},
           {"fire", 2}
+      }),
+      new Item(12, "femboy shark", "a shark that is infused with the power of the femboy",
+      new Dictionary<string, int>
+        {
+          {"defence", 10},
+          {"magic defence", 10},
+          {"regeneration", 2}
       })
   };
 }
