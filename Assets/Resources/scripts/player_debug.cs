@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class player_debug : MonoBehaviour
 {
   public player_controller player;
+  public player_sprite playerSprite;
   public inv inventory;
   public GameObject debug_test_input;
   public GameObject console;
@@ -74,6 +75,14 @@ public void debugEndEditCheck()
     }else if (args[0] == "load") {
       level_controler.instance.loadLevel(int.Parse(args[1]));
       result = "loading level" + args[1];
+    }else if (args[0] == "femboy") {
+      if(playerSprite.maid){
+        playerSprite.maid = false;
+        result = "femboy mode disabled";
+      }else{
+          playerSprite.maid = true;
+          result = "femboy mode enabled";
+      }
     }
     player.cant_move = false;
     inventory.noinv = false;
