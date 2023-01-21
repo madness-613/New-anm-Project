@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class magic_inv : MonoBehaviour
 {
-  public invui invUi;
+  public magic_inv_ui magicInvUi;
   public bool inventoryon;
   public bool noinv;
-  [HideInInspector]public List<int> player_items = new List<int>();
+  public List<int> player_crystels = new List<int>();
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +19,26 @@ public class magic_inv : MonoBehaviour
     void Update()
     {
       if (Input.GetKeyDown(KeyCode.M)) if(noinv == false) inventoryon = !inventoryon;
-      if (inventoryon == true) invUi.gameObject.SetActive(true);
-      if (inventoryon == false) invUi.gameObject.SetActive(false);
+      if (inventoryon == true) magicInvUi.gameObject.SetActive(true);
+      if (inventoryon == false) magicInvUi.gameObject.SetActive(false);
     }
 
-    public void GiveCrystel(int element)
+    public void GiveCrystel(int id)
     {
-      Element type = type_database.instance.GetElement(element);
-      
+      player_crystels.Add(id);
+      magicInvUi.AddNewCrystel(id);
+    }
+
+    public int CheckForCrystel(int id)
+    {
+      return player_crystels.Find(Crystel => Crystel == id);
+    }
+
+    public void RemoveCrystel(int id)
+    {
+      if (id != -1) {
+          player_crystels.Remove(id);
+          magicInvUi.RemoveCrystel(id);
+        }
     }
 }
