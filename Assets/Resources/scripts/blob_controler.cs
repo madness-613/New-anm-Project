@@ -39,7 +39,7 @@ float ColorA;
         color = new Color(ColorR, ColorG, ColorB, ColorA);
           spriteRenderer.color = color;
           blobAnimatorObject.color = color;
-          if (stats.type != "null") stats.magicDamege = 2;
+          if (stats.type != "physical") stats.magicDamege = 2;
           stats.hp = stats.hp * stats.mergeamount;
           stats.maxHp = stats.maxHp * stats.mergeamount;
           stats.damege = stats.damege * stats.mergeamount;

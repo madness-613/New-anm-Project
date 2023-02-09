@@ -28,16 +28,4 @@ public Text toolTipText;
       toolTipText.text = toolTip;
       gameObject.SetActive(true);
     }
-
-    public void GenerateMagicToolTip(int id)
-    {
-      string statText = "";
-      Element Type = type_database.instance.GetElement(id);
-      foreach(KeyValuePair<string,string> crystel in Type.stats2){
-        statText += crystel.Key + ": " + crystel.Value + "\n";
-      }
-      string toolTip = string.Format("<b>{0}</b>\n{1}\n\n<b>{2}</b>", Type.title, Type.description, statText);
-      toolTipText.text = toolTip;
-      gameObject.SetActive(true);
-    }
 }

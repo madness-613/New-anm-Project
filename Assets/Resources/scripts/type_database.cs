@@ -80,7 +80,7 @@ public static type_database instance = null;
     void BuildDatabase()
     {
       Elements = new List<Element>(){
-        new Element(0, "null", "the element that counters all mana",
+        new Element(0, "null", "the element that conters all mana",
           new Dictionary<string, float>
           {
             {"ColorR", 1},
@@ -96,8 +96,7 @@ public static type_database instance = null;
             {"Boost", "none"},
             {"Specal", "void"},
             {"ExtraMerge", "none"},
-            {"ExtraMergeto", "none"},
-            {"baseSpell", "counter"}
+            {"ExtraMergeto", "none"}
         }),
         new Element(1, "poison", "the element that creates or controls things like diseases or poisons",
           new Dictionary<string, float>
@@ -115,8 +114,7 @@ public static type_database instance = null;
             {"Boost", "none"},
             {"Specal", "lingering"},
             {"ExtraMerge", "none"},
-            {"ExtraMergeto", "none"},
-            {"baseSpell", "venom"}
+            {"ExtraMergeto", "none"}
         }),
         new Element(2, "water", "the element that creates or controls things like the lakes or rain",
           new Dictionary<string, float>
@@ -134,8 +132,7 @@ public static type_database instance = null;
             {"Boost", "none"},
             {"Specal", "none"},
             {"ExtraMerge", "fire"},
-            {"ExtraMergeto", "air"},
-            {"baseSpell", "wave"}
+            {"ExtraMergeto", "air"}
         }),
         new Element(3, "fire", "the element that creates or controls things like heat and fire",
           new Dictionary<string, float>
@@ -153,8 +150,7 @@ public static type_database instance = null;
             {"Boost", "plant"},
             {"Specal", "lingering"},
             {"ExtraMerge", "fire"},
-            {"ExtraMergeto", "air"},
-            {"baseSpell", "fireburst"}
+            {"ExtraMergeto", "air"}
         }),
         new Element(4, "ice", "the element that creates or controls things like heat and fire",
           new Dictionary<string, float>
@@ -172,8 +168,7 @@ public static type_database instance = null;
             {"Boost", "none"},
             {"Specal", "freeze"},
             {"ExtraMerge", "none"},
-            {"ExtraMergeto", "none"},
-            {"baseSpell", "freeze"}
+            {"ExtraMergeto", "none"}
         }),
         new Element(5, "plant", "the element that creates or controls things like vines and plants",
           new Dictionary<string, float>
@@ -191,8 +186,7 @@ public static type_database instance = null;
             {"Boost", "water"},
             {"Specal", "none"},
             {"ExtraMerge", "none"},
-            {"ExtraMergeto", "none"},
-            {"baseSpell", "growth"}
+            {"ExtraMergeto", "none"}
         }),
         new Element(6, "air", "the element that creates or controls things like weather and wind",
           new Dictionary<string, float>
@@ -210,8 +204,7 @@ public static type_database instance = null;
             {"Boost", "none"},
             {"Specal", "none"},
             {"ExtraMerge", "none"},
-            {"ExtraMergeto", "none"},
-            {"baseSpell", "gust"}
+            {"ExtraMergeto", "none"}
         }),
         new Element(7, "earth", "the element that creates or controls things like the ground or hills",
           new Dictionary<string, float>
@@ -229,8 +222,7 @@ public static type_database instance = null;
             {"Boost", "none"},
             {"Specal", "none"},
             {"ExtraMerge", "none"},
-            {"ExtraMergeto", "none"},
-            {"baseSpell", "rock throw"}
+            {"ExtraMergeto", "none"}
         }),
         new Element(8, "lightning", "the element that creates or controls things like lightning or electricity ",
           new Dictionary<string, float>
@@ -248,8 +240,7 @@ public static type_database instance = null;
             {"Boost", "water"},
             {"Specal", "none"},
             {"ExtraMerge", "none"},
-            {"ExtraMergeto", "none"},
-            {"baseSpell", "shock"}
+            {"ExtraMergeto", "none"}
         })
       };
     }
