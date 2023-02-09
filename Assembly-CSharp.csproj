@@ -50,6 +50,7 @@
      <Compile Include="Assets\Resources\scripts\type_database.cs" />
      <Compile Include="Assets\Resources\scripts\settings_controler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\Resources\scripts\casting.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\Resources\scripts\player_controller.cs" />
